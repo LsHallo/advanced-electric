@@ -1,0 +1,13 @@
+data.raw.item["advanced-solar"].subgroup = "energy-solar-panel"
+data.raw.item["advanced-solar"].order = "b"
+data.raw.item["elite-solar"].subgroup = "energy-solar-panel"
+data.raw.item["elite-solar"].order = "c"
+data.raw.item["ultimate-solar"].subgroup = "energy-solar-panel"
+data.raw.item["ultimate-solar"].order = "d"
+
+data.raw.item["advanced-accumulator"].subgroup = "energy-accumulator"
+data.raw.item["advanced-accumulator"].order = "b"
+data.raw.item["elite-accumulator"].subgroup = "energy-accumulator"
+data.raw.item["elite-accumulator"].order = "c"
+data.raw.item["ultimate-accumulator"].subgroup = "energy-accumulator"
+data.raw.item["ultimate-accumulator"].order = "d"
