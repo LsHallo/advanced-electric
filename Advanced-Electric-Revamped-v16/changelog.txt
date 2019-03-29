@@ -1,4 +1,7 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+  - Renamed "electric-energy-accumulators-1" to "electric-energy-accumulators" 
+---------------------------------------------------------------------------------------------------
 Version: 0.3.4
   - Added pt-BR language
   - fixed es-ES language
