@@ -6,6 +6,6 @@
  "author": "LsHallo",
  "homepage": "https://forums.factorio.com/viewtopic.php?f=190&t=59398",
  "description": "Adds higher tiers of solar panels(600kW, 6MW, 60MW) and accumulators(50MJ, 500MJ, 5GJ). Crafting cost scales linearly.",
- "dependencies": ["base >= 0.17"],
+ "dependencies": ["base >= 0.17.23"],
  "factorio_version": "0.17"
 }
