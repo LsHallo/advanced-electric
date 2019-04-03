@@ -12,7 +12,7 @@ data:extend(
         recipe = "advanced-accumulator"
       }
     },
-    prerequisites = {"electric-energy-accumulators-1"},
+    prerequisites = {"electric-energy-accumulators"},
     unit =
     {
       count = 150,

@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+  - Renamed "electric-energy-accumulators-1" to "electric-energy-accumulators" (See 0.17.23 changelog)
+  - Added zh-TW language translation
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+  - Added pt-BR language
+  - fixed es-ES language
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+  - Added es-ES language
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+  - Changed internal data layout for easier maintaining
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+  - Added script for compatability with 5dim's crafting menu
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+  - Version 0.17 release
+  - Made accumulators hr
+  - Science pack requirement rebalancing
+  - Decreased mod size by 50%
+  - Added colored charge/discharge animation for accumulators
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+  - Added nl locale
+  - Added ru locale
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+  - Added fr locale
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+  - Added de locale
+  - Aligned science pack requirements of same tier accumulators and solar panels
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+  - Fixed non hr version not working properly
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+  - Fixed icons in several places
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+  - Initial release
+  - Updated solar panel textures
+
