@@ -112,6 +112,8 @@ end
 local ultimate_accumulator = util.table.deepcopy(data.raw["accumulator"]["accumulator"])
 ultimate_accumulator.name = "ultimate-accumulator"
 ultimate_accumulator.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/ultimate-accumulator.png"
+ultimate_accumulator.icon_size = 32
+ultimate_accumulator.icon_mipmaps = 0
 ultimate_accumulator.minable.result =  "ultimate-accumulator"
 ultimate_accumulator.energy_source = {
   type = "electric",
