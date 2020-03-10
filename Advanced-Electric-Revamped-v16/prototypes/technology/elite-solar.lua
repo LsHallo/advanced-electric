@@ -15,7 +15,7 @@ data:extend(
     prerequisites = {"advanced-solar"},
     unit =
     {
-      count = 250,
+      count = 500,
       ingredients =
       {
         {"automation-science-pack", 1},

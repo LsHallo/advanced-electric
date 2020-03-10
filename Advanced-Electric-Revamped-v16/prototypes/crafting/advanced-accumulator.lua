@@ -3,13 +3,13 @@ data:extend(
   {
     type = "recipe",
     name = "advanced-accumulator",
-    energy_required = 25,
+    energy_required = 30,
     enabled = false,
     ingredients =
     {
-      {"accumulator", 10},
-      {"iron-plate", 25},
-      {"battery", 10}
+      {"accumulator", 11},
+      {"iron-plate", 10},
+      {"electronic-circuit", 5}
     },
     result = "advanced-accumulator"
   }

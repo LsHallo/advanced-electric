@@ -15,7 +15,7 @@ data:extend(
     prerequisites = {"advanced-accumulator"},
     unit =
     {
-      count = 150,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -23,7 +23,7 @@ data:extend(
         {"chemical-science-pack", 1},
         {"production-science-pack", 1}
       },
-      time = 45
+      time = 60
     },
     order = "c-e-c",
   }

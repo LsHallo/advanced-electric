@@ -3,13 +3,13 @@ data:extend(
   {
     type = "recipe",
     name = "ultimate-solar",
-    energy_required = 10,
+    energy_required = 60,
     enabled = false,
     ingredients =
     {
-      {"steel-plate", 25},
-      {"processing-unit", 5},
-      {"elite-solar", 10}
+      {"steel-plate", 50},
+      {"processing-unit", 50},
+      {"elite-solar", 15}
     },
     result = "ultimate-solar"
   }
