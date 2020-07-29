@@ -17,8 +17,8 @@ The language file consists of 4 parts. Each part defines the name of
 3. the technology
 4. the description of the technology
 
-The file needs to be called locale.cfg and placed in "**Advanced-Electric-Revamped-v16\locale\[locale-shorthand (e.g.: en, de, nl, ...)**"
-`e.g: Advanced-Electric-Revamped-v16\locale\it\locale.cfg`.  
+The file needs to be called locale.cfg and placed in "**Advanced-Electric-Revamped-v16/locale/[locale-shorthand] (e.g.: en, de, nl, ...)**"
+`e.g: Advanced-Electric-Revamped-v16/locale/it/locale.cfg`.  
 Take a look in the locale folder for more examples: [advanced-electric/locale](https://github.com/LsHallo/advanced-electric/tree/master/Advanced-Electric-Revamped-v16/locale)  
 #### Sample language file (english)
 ```
