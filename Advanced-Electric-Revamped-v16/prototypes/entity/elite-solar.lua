@@ -1,8 +1,8 @@
 local elite_solar = util.table.deepcopy(data.raw["solar-panel"]["solar-panel"])
 elite_solar.name = "elite-solar"
 elite_solar.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/elite-solar.png"
-elite_solar.icon_size = 32
-elite_solar.icon_mipmaps = 0
+elite_solar.icon_size = 64
+elite_solar.icon_mipmaps = 4
 elite_solar.minable.result = "elite-solar"
 elite_solar.picture = 
 {
