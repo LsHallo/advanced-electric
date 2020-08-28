@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+  Changes:
+    - Added settings to disable tiers if you like. Disabling a tier will not remove existing panels. It will only disable the crafing recipe and technology.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.6
   Changes:
     - New hr technology icons
