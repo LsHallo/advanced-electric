@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-elite"].value
+
 function elite_accumulator_picture(tint, repeat_count)
   return
   {
@@ -117,10 +119,10 @@ elite_accumulator.icon_mipmaps = 4
 elite_accumulator.minable.result =  "elite-accumulator"
 elite_accumulator.energy_source = {
   type = "electric",
-  buffer_capacity = "500MJ",
+  buffer_capacity = 5 * mul .. "MJ",
   usage_priority = "tertiary",
-  input_flow_limit = "30MW",
-  output_flow_limit = "30MW"
+  input_flow_limit = .3 * mul .. "MW",
+  output_flow_limit = .3 * mul .. "MW"
 }
 elite_accumulator.picture = elite_accumulator_picture()
 elite_accumulator.charge_animation = elite_accumulator_charge()

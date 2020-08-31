@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-elite"].value
+
 local elite_solar = util.table.deepcopy(data.raw["solar-panel"]["solar-panel"])
 elite_solar.name = "elite-solar"
 elite_solar.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/elite-solar.png"
@@ -42,6 +44,6 @@ elite_solar.picture =
 	}
   }
 }
-elite_solar.production = "6MW"
+elite_solar.production = .06 * mul .. "MW"
 elite_solar.fast_replaceable_group = "solar-panel"
 data:extend({elite_solar})

@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-advanced"].value
+
 function advanced_accumulator_picture(tint, repeat_count)
   return
   {
@@ -117,10 +119,10 @@ advanced_accumulator.icon_mipmaps = 4
 advanced_accumulator.minable.result =  "advanced-accumulator"
 advanced_accumulator.energy_source = {
   type = "electric",
-  buffer_capacity = "50MJ",
+  buffer_capacity = 5 * mul .. "MJ",
   usage_priority = "tertiary",
-  input_flow_limit = "3MW",
-  output_flow_limit = "3MW"
+  input_flow_limit = .3 * mul .. "MW",
+  output_flow_limit = .3 * mul .. "MW"
 }
 advanced_accumulator.picture = advanced_accumulator_picture()
 advanced_accumulator.charge_animation = advanced_accumulator_charge()

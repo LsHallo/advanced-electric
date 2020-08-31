@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+  Changes:
+    - Even more settings. Freely configurable multiplier for each tier.
+    - Add new DE and EN translation strings.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
   Changes:
     - Added settings to disable tiers if you like. Disabling a tier will not remove existing panels. It will only disable the crafing recipe and technology.

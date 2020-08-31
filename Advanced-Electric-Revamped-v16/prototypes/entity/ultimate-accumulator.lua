@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-ultimate"].value
+
 function ultimate_accumulator_picture(tint, repeat_count)
   return
   {
@@ -117,10 +119,10 @@ ultimate_accumulator.icon_mipmaps = 4
 ultimate_accumulator.minable.result =  "ultimate-accumulator"
 ultimate_accumulator.energy_source = {
   type = "electric",
-  buffer_capacity = "5GJ",
+  buffer_capacity = 5 * mul .. "MJ",
   usage_priority = "tertiary",
-  input_flow_limit = "300MW",
-  output_flow_limit = "300MW"
+  input_flow_limit = .3 * mul .. "MW",
+  output_flow_limit = .3 * mul .. "MW"
 }
 ultimate_accumulator.picture = ultimate_accumulator_picture()
 ultimate_accumulator.charge_animation = ultimate_accumulator_charge()
