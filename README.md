@@ -55,12 +55,19 @@ elite-solar=Source of free electric energy, but useless at night.
 ultimate-solar=Source of free electric energy, but useless at night.
 
 [mod-setting-name]
-advanced-electric-enable-advanced=Enable advanced tier
-advanced-electric-enable-elite=Enable elite tier
-advanced-electric-enable-ultimate=Enable ultimate tier
+advanced-electric-enabled-tiers=Enabled Tiers
+advanced-electric-multiplier-advanced=Advanced Tier Multiplier
+advanced-electric-multiplier-elite=Elite Tier Multiplier
+advanced-electric-multiplier-ultimate=Ultimate Tier Multiplier
 
 [mod-setting-description]
-advanced-electric-enable-advanced=Toggle advanced tier. Will not remove existing panels. Only disables crafting / research.
-advanced-electric-enable-elite=Toggle elite tier. Will not remove existing panels. Only disables crafting / research.
-advanced-electric-enable-ultimate=Toggle ultimate tier. Will not remove existing panels. Only disables crafting / research.
+advanced-electric-enabled-tiers=Disable specific tiers.
+advanced-electric-multiplier-advanced=Multiplier for the production values of the tier. [Base Game Value] * Multiplier. E.g.: For a 600kW panel use 10.
+advanced-electric-multiplier-elite=Multiplier for the production values of the tier. [Base Game Value] * Multiplier. E.g.: For a 6MW panel use 100.
+advanced-electric-multiplier-ultimate=Multiplier for the production values of the tier. [Base Game Value] * Multiplier. E.g.: For a 60MW panel use 1000.
+
+[string-mod-setting]
+advanced-electric-enabled-tiers-advanced=Advanced
+advanced-electric-enabled-tiers-elite=Advanced + Elite
+advanced-electric-enabled-tiers-ultimate=Advanced + Elite + Ultimate
 ```
