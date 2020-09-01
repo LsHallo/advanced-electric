@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.2
+  Changes:
+    - Add additional es-es translation
+    - Crafting recipes and technology cost scales with multiplier
+---------------------------------------------------------------------------------------------------
 Version: 0.6.1
   Changes:
     - Even more settings. Freely configurable multiplier for each tier.

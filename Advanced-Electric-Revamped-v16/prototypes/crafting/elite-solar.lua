@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-elite"].value
+
 data:extend(
 {
   {
@@ -9,7 +11,7 @@ data:extend(
     {
       {"steel-plate", 10},
       {"advanced-circuit", 10},
-      {"advanced-solar", 12}
+      {"advanced-solar", mul / 10 + 2}
     },
     result = "elite-solar"
   }

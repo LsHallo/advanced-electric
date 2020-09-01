@@ -1,11 +1,11 @@
 {
  "name": "Advanced-Electric-Revamped-v16",
- "version": "0.6.1",
+ "version": "0.6.2",
  "title": "Advanced Solar High Resolution",
  "contact": "https://twitter.com/xlshallox",
  "author": "LsHallo",
  "homepage": "https://forums.factorio.com/viewtopic.php?f=190&t=59398",
- "description": "Adds higher tiers of solar panels(600kW, 6MW, 60MW) and accumulators(50MJ, 500MJ, 5GJ).",
+ "description": "Adds higher tiers of solar panels(600kW, 6MW, 60MW) and accumulators(50MJ, 500MJ, 5GJ). Values configurable.",
  "dependencies": ["base >= 1.0.0"],
  "factorio_version": "1.0"
 }

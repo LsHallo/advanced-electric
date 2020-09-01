@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-ultimate"].value
+
 data:extend(
 {
   {
@@ -9,7 +11,7 @@ data:extend(
     {
       {"steel-plate", 50},
       {"processing-unit", 50},
-      {"elite-solar", 15}
+      {"elite-solar", mul / 100 + 5}
     },
     result = "ultimate-solar"
   }

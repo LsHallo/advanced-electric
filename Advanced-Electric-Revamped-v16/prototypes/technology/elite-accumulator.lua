@@ -1,3 +1,5 @@
+mul = settings.startup["advanced-electric-multiplier-elite"].value
+
 data:extend(
 {
   {
@@ -15,7 +17,7 @@ data:extend(
     prerequisites = {"advanced-accumulator"},
     unit =
     {
-      count = 300,
+      count = 3 * mul,
       ingredients =
       {
         {"automation-science-pack", 1},
