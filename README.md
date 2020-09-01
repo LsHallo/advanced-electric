@@ -10,6 +10,8 @@ If you are not versed in mod making in factorio please create an issue instead.
 # Translating
 If you do not see your language being supported by the mod feel free to issue a pull request and add your specific language file. I'm always thankful for contributors who want to make it easier for others to use the mod.
 
+You can also use this google form: https://forms.gle/dLog7eigLCVccEtG6
+
 ### Further info:
 The language file consists of 4 parts. Each part defines the name of
 1. the item
