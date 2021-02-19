@@ -1,4 +1,4 @@
-mul = settings.startup["advanced-electric-multiplier-ultimate"].value
+mul = settings.startup["advanced-electric-multiplier-ultimate-solar"].value
 
 local ultimate_solar = util.table.deepcopy(data.raw["solar-panel"]["solar-panel"])
 ultimate_solar.name = "ultimate-solar"

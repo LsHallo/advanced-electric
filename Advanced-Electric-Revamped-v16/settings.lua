@@ -8,7 +8,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "advanced-electric-multiplier-advanced",
+        name = "advanced-electric-multiplier-advanced-solar",
         setting_type = "startup",
         default_value = 10,
         minimum_value = 1,
@@ -16,7 +16,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "advanced-electric-multiplier-elite",
+        name = "advanced-electric-multiplier-elite-solar",
         setting_type = "startup",
         default_value = 100,
         minimum_value = 1,
@@ -24,7 +24,31 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "advanced-electric-multiplier-ultimate",
+        name = "advanced-electric-multiplier-ultimate-solar",
+        setting_type = "startup",
+        default_value = 1000,
+        minimum_value = 1,
+        maximum_value = 100000
+    },
+    {
+        type = "int-setting",
+        name = "advanced-electric-multiplier-advanced-accumulator",
+        setting_type = "startup",
+        default_value = 10,
+        minimum_value = 1,
+        maximum_value = 100000
+    },
+    {
+        type = "int-setting",
+        name = "advanced-electric-multiplier-elite-accumulator",
+        setting_type = "startup",
+        default_value = 100,
+        minimum_value = 1,
+        maximum_value = 100000
+    },
+    {
+        type = "int-setting",
+        name = "advanced-electric-multiplier-ultimate-accumulator",
         setting_type = "startup",
         default_value = 1000,
         minimum_value = 1,

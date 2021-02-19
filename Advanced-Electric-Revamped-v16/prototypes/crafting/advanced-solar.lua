@@ -1,4 +1,4 @@
-mul = settings.startup["advanced-electric-multiplier-advanced"].value
+mul = settings.startup["advanced-electric-multiplier-advanced-solar"].value
 
 data:extend(
 {

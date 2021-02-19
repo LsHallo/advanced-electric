@@ -1,4 +1,4 @@
-mul = settings.startup["advanced-electric-multiplier-elite"].value
+mul = settings.startup["advanced-electric-multiplier-elite-accumulator"].value
 
 function elite_accumulator_picture(tint, repeat_count)
   return
