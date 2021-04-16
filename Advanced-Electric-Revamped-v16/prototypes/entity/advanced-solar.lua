@@ -1,4 +1,5 @@
 mul = settings.startup["advanced-electric-multiplier-advanced-solar"].value
+tier = settings.startup["advanced-electric-enabled-tiers"].value
 
 local advanced_solar = util.table.deepcopy(data.raw["solar-panel"]["solar-panel"])
 advanced_solar.name = "advanced-solar"
@@ -46,4 +47,7 @@ advanced_solar.picture =
 }
 advanced_solar.production = .06 * mul .. "MW"
 advanced_solar.fast_replaceable_group = "solar-panel"
+if tier == "elite" or tier == "ultimate" then
+	advanced_solar.next_upgrade = "elite-solar"
+end
 data:extend({advanced_solar})

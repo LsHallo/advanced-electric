@@ -1,4 +1,5 @@
 mul = settings.startup["advanced-electric-multiplier-elite-accumulator"].value
+tier = settings.startup["advanced-electric-enabled-tiers"].value
 
 function elite_accumulator_picture(tint, repeat_count)
   return
@@ -130,4 +131,7 @@ elite_accumulator.charge_light = {intensity = 0.3, size = 7, color = {r = 0.1, g
 elite_accumulator.discharge_animation = elite_accumulator_discharge()
 elite_accumulator.discharge_light = {intensity = 0.7, size = 7, color = {r = 0.1, g = 0.13, b = 0.28}}
 elite_accumulator.fast_replaceable_group = "accumulator"
+if tier == "ultimate" then
+	elite_accumulator.next_upgrade = "ultimate-accumulator"
+end
 data:extend({elite_accumulator})
