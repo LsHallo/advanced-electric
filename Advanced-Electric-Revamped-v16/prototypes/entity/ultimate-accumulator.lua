@@ -117,6 +117,7 @@ ultimate_accumulator.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/u
 ultimate_accumulator.icon_size = 64
 ultimate_accumulator.icon_mipmaps = 4
 ultimate_accumulator.minable.result =  "ultimate-accumulator"
+ultimate_accumulator.max_health = 450
 ultimate_accumulator.energy_source = {
   type = "electric",
   buffer_capacity = 5 * mul .. "MJ",

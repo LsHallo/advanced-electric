@@ -118,6 +118,7 @@ elite_accumulator.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/elit
 elite_accumulator.icon_size = 64
 elite_accumulator.icon_mipmaps = 4
 elite_accumulator.minable.result =  "elite-accumulator"
+elite_accumulator.max_health = 325
 elite_accumulator.energy_source = {
   type = "electric",
   buffer_capacity = 5 * mul .. "MJ",

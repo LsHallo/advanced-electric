@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.7
+  Changes:
+    - Fix incompatibility with Factorio Extended Plus - Power
+    - Adjust health of entities to better reflect crafting cost
+---------------------------------------------------------------------------------------------------
 Version: 0.6.6
   Changes:
     - Improve default upgrade for use with upgrade planner (Thanks Stever1388)

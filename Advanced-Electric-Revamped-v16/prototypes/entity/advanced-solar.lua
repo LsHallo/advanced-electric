@@ -7,6 +7,7 @@ advanced_solar.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/advance
 advanced_solar.icon_size = 64
 advanced_solar.icon_mipmaps = 4
 advanced_solar.minable.result =  "advanced-solar"
+advanced_solar.max_health = 300
 advanced_solar.picture = 
 {
   layers =

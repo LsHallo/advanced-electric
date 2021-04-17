@@ -6,6 +6,7 @@ ultimate_solar.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/ultimat
 ultimate_solar.icon_size = 64
 ultimate_solar.icon_mipmaps = 4
 ultimate_solar.minable.result = "ultimate-solar"
+ultimate_solar.max_health = 500
 ultimate_solar.picture = 
 {
   layers =

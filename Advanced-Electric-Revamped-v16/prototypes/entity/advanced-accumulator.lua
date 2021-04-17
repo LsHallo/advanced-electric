@@ -118,6 +118,7 @@ advanced_accumulator.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/a
 advanced_accumulator.icon_size = 64;
 advanced_accumulator.icon_mipmaps = 4
 advanced_accumulator.minable.result =  "advanced-accumulator"
+advanced_accumulator.max_health = 250
 advanced_accumulator.energy_source = {
   type = "electric",
   buffer_capacity = 5 * mul .. "MJ",

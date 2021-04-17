@@ -7,6 +7,7 @@ elite_solar.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/elite-sola
 elite_solar.icon_size = 64
 elite_solar.icon_mipmaps = 4
 elite_solar.minable.result = "elite-solar"
+elite_solar.max_health = 375
 elite_solar.picture = 
 {
   layers =
