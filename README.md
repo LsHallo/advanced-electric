@@ -58,15 +58,21 @@ ultimate-solar=Source of free electric energy, but useless at night.
 
 [mod-setting-name]
 advanced-electric-enabled-tiers=Enabled Tiers
-advanced-electric-multiplier-advanced=Advanced Tier Multiplier
-advanced-electric-multiplier-elite=Elite Tier Multiplier
-advanced-electric-multiplier-ultimate=Ultimate Tier Multiplier
+advanced-electric-multiplier-advanced-solar=Advanced Solar Tier Multiplier
+advanced-electric-multiplier-elite-solar=Elite Solar Tier Multiplier
+advanced-electric-multiplier-ultimate-solar=Ultimate Solar Tier Multiplier
+advanced-electric-multiplier-advanced-accumulator=Advanced Accumulator Tier Multiplier
+advanced-electric-multiplier-elite-accumulator=Elite Accumulator Tier Multiplier
+advanced-electric-multiplier-ultimate-accumulator=Ultimate Accumulator Tier Multiplier
 
 [mod-setting-description]
 advanced-electric-enabled-tiers=Disable specific tiers.
-advanced-electric-multiplier-advanced=Multiplier for the production values of the tier. [Base Game Value] * Multiplier. E.g.: For a 600kW panel use 10.
-advanced-electric-multiplier-elite=Multiplier for the production values of the tier. [Base Game Value] * Multiplier. E.g.: For a 6MW panel use 100.
-advanced-electric-multiplier-ultimate=Multiplier for the production values of the tier. [Base Game Value] * Multiplier. E.g.: For a 60MW panel use 1000.
+advanced-electric-multiplier-advanced-solar=Multiplier for the production values of the tier. 60kW * [Multiplier]. E.g.: For a 600kW panel use 10.
+advanced-electric-multiplier-elite-solar=Multiplier for the production values of the tier. 60kW * [Multiplier]. E.g.: For a 6MW panel use 100.
+advanced-electric-multiplier-ultimate-solar=Multiplier for the production values of the tier. 60kW * [Multiplier]. E.g.: For a 60MW panel use 1000.
+advanced-electric-multiplier-advanced-accumulator=Multiplier for the production values of the tier. 5MJ * [Multiplier]. E.g.: For a 50MJ accumulator use 10.
+advanced-electric-multiplier-elite-accumulator=Multiplier for the production values of the tier. 5MJ * [Multiplier]. E.g.: For a 500MJ accumulator use 100.
+advanced-electric-multiplier-ultimate-accumulator=Multiplier for the production values of the tier. 5MJ * [Multiplier]. E.g.: For a 5GJ accumulator use 1000.
 
 [string-mod-setting]
 advanced-electric-enabled-tiers-advanced=Advanced
