@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.10
+  Changes:
+    - Added zh-CN translation
+    - Improved es-ES translation
+    - Improved en translation
+    - Improved de translation
+    - Improved fr translation
+---------------------------------------------------------------------------------------------------
 Version: 0.6.9
   Changes:
     - Improved es-ES translation
