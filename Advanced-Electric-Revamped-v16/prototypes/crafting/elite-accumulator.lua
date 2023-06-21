@@ -1,4 +1,4 @@
-mul = settings.startup["advanced-electric-multiplier-elite-accumulator"].value
+mul = settings.startup["advanced-electric-multiplier-elite-accumulator"].value / settings.startup["advanced-electric-multiplier-advanced-accumulator"].value
 
 data:extend(
 {
@@ -9,7 +9,7 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"advanced-accumulator", mul / 10 + 2},
+      {"advanced-accumulator", mul + 2},
       {"iron-plate", 25},
       {"advanced-circuit", 10}
     },
