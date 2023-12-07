@@ -45,7 +45,7 @@ ultimate_solar.picture =
 	}
   }
 }
-ultimate_solar.production = .06 * mul .. "MW"
+ultimate_solar.production = numberextractor(data.raw["solar-panel"]["solar-panel"]["production"]) * mul .. "MW"
 ultimate_solar.fast_replaceable_group = "solar-panel"
 data:extend({ultimate_solar})
 

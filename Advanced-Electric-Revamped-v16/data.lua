@@ -1,3 +1,7 @@
+function numberextractor(string)
+	return tonumber(string:match("%d+"))
+end
+
 tier=settings.startup["advanced-electric-enabled-tiers"].value
 
 -- advanced accumulator

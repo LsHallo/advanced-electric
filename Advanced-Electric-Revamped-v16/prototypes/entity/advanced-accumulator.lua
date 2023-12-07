@@ -112,7 +112,9 @@ function advanced_accumulator_discharge()
   }
 end
 
-local advanced_accumulator = util.table.deepcopy(data.raw["accumulator"]["accumulator"])
+local orig_accu = data.raw["accumulator"]["accumulator"]
+
+local advanced_accumulator = util.table.deepcopy(orig_accu)
 advanced_accumulator.name = "advanced-accumulator"
 advanced_accumulator.icon = "__Advanced-Electric-Revamped-v16__/graphics/icons/advanced-accumulator.png"
 advanced_accumulator.icon_size = 64;
@@ -121,10 +123,10 @@ advanced_accumulator.minable.result =  "advanced-accumulator"
 advanced_accumulator.max_health = 250
 advanced_accumulator.energy_source = {
   type = "electric",
-  buffer_capacity = 5 * mul .. "MJ",
+  buffer_capacity = numberextractor(orig_accu["energy_source"]["buffer_capacity"]) * mul .. "MJ",
   usage_priority = "tertiary",
-  input_flow_limit = .3 * mul .. "MW",
-  output_flow_limit = .3 * mul .. "MW"
+  input_flow_limit = numberextractor(orig_accu["energy_source"]["input_flow_limit"]) * mul .. "MW",
+  output_flow_limit = numberextractor(orig_accu["energy_source"]["output_flow_limit"]) * mul .. "MW"
 }
 advanced_accumulator.picture = advanced_accumulator_picture()
 advanced_accumulator.charge_animation = advanced_accumulator_charge()
