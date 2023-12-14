@@ -46,7 +46,7 @@ advanced_solar.picture =
 	}
   }
 }
-advanced_solar.production = numberextractor(data.raw["solar-panel"]["solar-panel"]["production"]) * mul .. "MW"
+advanced_solar.production = numberextractor(data.raw["solar-panel"]["solar-panel"]["production"]) * mul .. "kW"
 advanced_solar.fast_replaceable_group = "solar-panel"
 if tier == "elite" or tier == "ultimate" then
 	advanced_solar.next_upgrade = "elite-solar"

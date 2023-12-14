@@ -125,8 +125,8 @@ advanced_accumulator.energy_source = {
   type = "electric",
   buffer_capacity = numberextractor(orig_accu["energy_source"]["buffer_capacity"]) * mul .. "MJ",
   usage_priority = "tertiary",
-  input_flow_limit = numberextractor(orig_accu["energy_source"]["input_flow_limit"]) * mul .. "MW",
-  output_flow_limit = numberextractor(orig_accu["energy_source"]["output_flow_limit"]) * mul .. "MW"
+  input_flow_limit = numberextractor(orig_accu["energy_source"]["input_flow_limit"]) * mul .. "kW",
+  output_flow_limit = numberextractor(orig_accu["energy_source"]["output_flow_limit"]) * mul .. "kW"
 }
 advanced_accumulator.picture = advanced_accumulator_picture()
 advanced_accumulator.charge_animation = advanced_accumulator_charge()
