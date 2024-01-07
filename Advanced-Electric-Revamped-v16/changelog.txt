@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.14
+  Changes:
+    - Update CS translation with new strings
+    - Update RU translation with new strings
+---------------------------------------------------------------------------------------------------
 Version: 0.6.13
   Changes:
     - Fix multiplicator being too high.
