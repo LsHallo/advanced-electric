@@ -123,10 +123,10 @@ elite_accumulator.minable.result =  "elite-accumulator"
 elite_accumulator.max_health = 325
 elite_accumulator.energy_source = {
   type = "electric",
-  buffer_capacity = numberextractor(orig_accu["energy_source"]["buffer_capacity"]) * mul .. "MJ",
+  buffer_capacity =  numberstringmultiplicator(orig_accu["energy_source"]["buffer_capacity"], mul),
   usage_priority = "tertiary",
-  input_flow_limit = numberextractor(orig_accu["energy_source"]["input_flow_limit"]) * mul .. "kW",
-  output_flow_limit = numberextractor(orig_accu["energy_source"]["output_flow_limit"]) * mul .. "kW"
+  input_flow_limit = numberstringmultiplicator(orig_accu["energy_source"]["input_flow_limit"], mul),
+  output_flow_limit = numberstringmultiplicator(orig_accu["energy_source"]["output_flow_limit"], mul)
 }
 elite_accumulator.picture = elite_accumulator_picture()
 elite_accumulator.charge_animation = elite_accumulator_charge()

@@ -123,10 +123,10 @@ advanced_accumulator.minable.result =  "advanced-accumulator"
 advanced_accumulator.max_health = 250
 advanced_accumulator.energy_source = {
   type = "electric",
-  buffer_capacity = numberextractor(orig_accu["energy_source"]["buffer_capacity"]) * mul .. "MJ",
+  buffer_capacity =  numberstringmultiplicator(orig_accu["energy_source"]["buffer_capacity"], mul),
   usage_priority = "tertiary",
-  input_flow_limit = numberextractor(orig_accu["energy_source"]["input_flow_limit"]) * mul .. "kW",
-  output_flow_limit = numberextractor(orig_accu["energy_source"]["output_flow_limit"]) * mul .. "kW"
+  input_flow_limit = numberstringmultiplicator(orig_accu["energy_source"]["input_flow_limit"], mul),
+  output_flow_limit = numberstringmultiplicator(orig_accu["energy_source"]["output_flow_limit"], mul)
 }
 advanced_accumulator.picture = advanced_accumulator_picture()
 advanced_accumulator.charge_animation = advanced_accumulator_charge()

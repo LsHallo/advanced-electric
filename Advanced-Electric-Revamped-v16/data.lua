@@ -1,5 +1,6 @@
-function numberextractor(string)
-	return tonumber(string:match("%d+"))
+function numberstringmultiplicator(string, mul)
+	-- match number and convert to int, also extract unit
+	return (tonumber(string:match("%d+")) * mul) .. string:match("[kmgtwjKMGTWJ]+")
 end
 
 tier=settings.startup["advanced-electric-enabled-tiers"].value
