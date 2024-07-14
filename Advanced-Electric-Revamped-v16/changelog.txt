@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.15
+  Changes:
+    - Fix Advanced Solar Panel Power Multiplicator
+    - Compatibility with Base Unit Changing Mods (e.g. IR3)
+---------------------------------------------------------------------------------------------------
 Version: 0.6.14
   Changes:
     - Update CS translation with new strings
