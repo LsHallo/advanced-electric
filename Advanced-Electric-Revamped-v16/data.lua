@@ -1,5 +1,6 @@
 function numberstringmultiplicator(string, mul)
-	-- match number and convert to int, also extract unit
+	-- extract number from string and multiply. then add base unit back
+	-- 2MJ -> 2 * 1000, MJ -> 2000MJ
 	return (tonumber(string:match("%d+")) * mul) .. string:match("[kmgtwjKMGTWJ]+")
 end
 
