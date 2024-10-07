@@ -1,0 +1,10 @@
+api_token_env: CROWDIN_TOKEN
+project_id_env: CROWDIN_PROJECT_ID
+preserve_hierarchy: true
+
+files:
+  - source: /Advanced-Electric-Revamped-v16/locale/en/locale.cfg
+    dest: AdvancedElectric/locale.ini
+    translation: /Advanced-Electric-Revamped-v16/locale/%two_letters_code%/%original_file_name%
+    type: ini
+    update_option: update_as_unapproved
