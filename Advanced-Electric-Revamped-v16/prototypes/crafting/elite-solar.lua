@@ -1,4 +1,16 @@
-mul = settings.startup["advanced-electric-multiplier-elite-solar"].value / settings.startup["advanced-electric-multiplier-advanced-solar"].value
+local mul = settings.startup["advanced-electric-multiplier-elite-solar"].value / settings.startup["advanced-electric-multiplier-advanced-solar"].value
+local difficulty = settings.startup["advanced-electric-difficulty"].value
+
+local difficulty_cost = math.floor(mul * 1.1 + 0.5)
+local difficulty_factor = 0.8
+if difficulty == "easy" then
+	difficulty_cost = mul
+	difficulty_factor = 0.5
+end
+if difficulty == "hard" then
+	difficulty_cost = math.floor(mul * 1.3 + 0.5)
+	difficulty_factor = 1.2
+end
 
 data:extend(
 {
@@ -9,11 +21,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"steel-plate", 10},
-      {"advanced-circuit", 10},
-      {"advanced-solar", mul + 2}
+	  {type = "item", name = "steel-plate", amount = math.floor(10 * difficulty_factor + 0.5)},
+	  {type = "item", name = "advanced-circuit", amount = math.floor(10 * difficulty_factor + 0.5)},
+	  {type = "item", name = "advanced-solar", amount = difficulty_cost}
     },
-    result = "elite-solar"
+    results = {{type="item", name="elite-solar", amount=1}}
   }
 }
 )

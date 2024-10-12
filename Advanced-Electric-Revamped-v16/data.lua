@@ -4,6 +4,62 @@ function numberstringmultiplicator(string, mul)
 	return (tonumber(string:match("%d+")) * mul) .. string:match("[kmgtwjKMGTWJ]+")
 end
 
+function multiplytier(mul)
+	difficulty = settings.startup["advanced-electric-difficulty"]
+	if difficulty == "easy" then
+		return mul
+	end
+	if difficulty == "medium" then
+		return mul + math.floor(mul / 10 + 0.5)
+	end
+	if difficulty == "hard" then
+		return mul * 2
+	end
+end
+
+-- Reused Accumulator Animation Functions
+function advanced_electric_accumulator_discharge(base_graphics)
+  return
+  {
+    layers =
+    {
+      base_graphics({1, 1, 1, 1} , 24),
+      {
+        filename = "__base__/graphics/entity/accumulator/accumulator-discharge.png",
+        priority = "high",
+        width = 174,
+        height = 214,
+        line_length = 6,
+        frame_count = 24,
+        draw_as_glow = true,
+        shift = util.by_pixel(-1, -23),
+        scale = 0.5
+      }
+    }
+  }
+end
+
+function advanced_electric_accumulator_charge(base_graphics)
+  return
+  {
+    layers =
+    {
+      base_graphics({1, 1, 1, 1} , 24),
+      {
+        filename = "__base__/graphics/entity/accumulator/accumulator-charge.png",
+        priority = "high",
+        width = 178,
+        height = 210,
+        line_length = 6,
+        frame_count = 24,
+        draw_as_glow = true,
+        shift = util.by_pixel(0, -22),
+        scale = 0.5
+      }
+    }
+  }
+end
+
 tier=settings.startup["advanced-electric-enabled-tiers"].value
 
 -- advanced accumulator

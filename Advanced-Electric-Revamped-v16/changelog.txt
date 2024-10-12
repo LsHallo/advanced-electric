@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+  Changes:
+    - Factorio 2.0 Space Age compatibility
+    - Updated graphics from base 2.0 graphics
+    - Adjustable difficulty options (Easy, Medium, Hard)
+    - Updated FR translation
+    - Updated DE translation
+---------------------------------------------------------------------------------------------------
 Version: 0.6.15
   Changes:
     - Fix Advanced Solar Panel Power Multiplicator

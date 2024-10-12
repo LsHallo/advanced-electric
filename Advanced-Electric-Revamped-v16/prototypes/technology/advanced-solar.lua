@@ -1,4 +1,4 @@
-mul = settings.startup["advanced-electric-multiplier-advanced-solar"].value
+local mul = settings.startup["advanced-electric-multiplier-advanced-solar"].value
 
 data:extend(
 {
@@ -6,7 +6,7 @@ data:extend(
     type = "technology",
     name = "advanced-solar",
     icon = "__Advanced-Electric-Revamped-v16__/graphics/technology/advanced-solar.png",
-    icon_size = 128,
+    icon_size = 256,
     effects =
     {
       {

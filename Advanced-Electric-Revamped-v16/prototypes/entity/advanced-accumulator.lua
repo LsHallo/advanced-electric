@@ -1,5 +1,5 @@
-mul = settings.startup["advanced-electric-multiplier-advanced-accumulator"].value
-tier = settings.startup["advanced-electric-enabled-tiers"].value
+local mul = settings.startup["advanced-electric-multiplier-advanced-accumulator"].value
+local tier = settings.startup["advanced-electric-enabled-tiers"].value
 
 function advanced_accumulator_picture(tint, repeat_count)
   return
@@ -7,106 +7,24 @@ function advanced_accumulator_picture(tint, repeat_count)
     layers =
     {
       {
-        filename = "__Advanced-Electric-Revamped-v16__/graphics/entity/advanced-accumulator/accumulator.png",
-        priority = "extra-high",
-        width = 66,
-        height = 94,
+        filename = "__Advanced-Electric-Revamped-v16__/graphics/entity/advanced-accumulator/hr-accumulator.png",
+        priority = "high",
+        width = 130,
+        height = 189,
         repeat_count = repeat_count,
-        shift = util.by_pixel(0, -10),
+        shift = util.by_pixel(0, -11),
         tint = tint,
-        animation_speed = 0.5,
-        hr_version =
-        {
-          filename = "__Advanced-Electric-Revamped-v16__/graphics/entity/advanced-accumulator/hr-accumulator.png",
-          priority = "extra-high",
-          width = 130,
-          height = 189,
-          repeat_count = repeat_count,
-          shift = util.by_pixel(0, -11),
-          tint = tint,
-          animation_speed = 0.5,
-          scale = 0.5
-        }
+        scale = 0.5
       },
       {
         filename = "__base__/graphics/entity/accumulator/accumulator-shadow.png",
-        priority = "extra-high",
-        width = 120,
-        height = 54,
+        priority = "high",
+        width = 234,
+        height = 106,
         repeat_count = repeat_count,
-        shift = util.by_pixel(28, 6),
+        shift = util.by_pixel(29, 6),
         draw_as_shadow = true,
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/accumulator/hr-accumulator-shadow.png",
-          priority = "extra-high",
-          width = 234,
-          height = 106,
-          repeat_count = repeat_count,
-          shift = util.by_pixel(29, 6),
-          draw_as_shadow = true,
-          scale = 0.5
-        }
-      }
-    }
-  }
-end
-
-function advanced_accumulator_charge()
-  return
-  {
-    layers =
-    {
-      advanced_accumulator_picture({ r=1, g=1, b=1, a=1 } , 24),
-      {
-        filename = "__base__/graphics/entity/accumulator/accumulator-charge.png",
-        width = 90,
-        height = 100,
-        line_length = 6,
-        frame_count = 24,
-        blend_mode = "additive",
-        shift = util.by_pixel(0, -22),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/accumulator/hr-accumulator-charge.png",
-          width = 178,
-          height = 206,
-          line_length = 6,
-          frame_count = 24,
-          blend_mode = "additive",
-          shift = util.by_pixel(0, -22),
-          scale = 0.5
-        }
-      }
-    }
-  }
-end
-
-function advanced_accumulator_discharge()
-  return
-  {
-    layers =
-    {
-      advanced_accumulator_picture({ r=1, g=1, b=1, a=1 } , 24),
-      {
-        filename = "__base__/graphics/entity/accumulator/accumulator-discharge.png",
-        width = 88,
-        height = 104,
-        line_length = 6,
-        frame_count = 24,
-        blend_mode = "additive",
-        shift = util.by_pixel(-2, -22),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/accumulator/hr-accumulator-discharge.png",
-          width = 170,
-          height = 210,
-          line_length = 6,
-          frame_count = 24,
-          blend_mode = "additive",
-          shift = util.by_pixel(-1, -23),
-          scale = 0.5
-        }
+        scale = 0.5
       }
     }
   }
@@ -128,11 +46,15 @@ advanced_accumulator.energy_source = {
   input_flow_limit = numberstringmultiplicator(orig_accu["energy_source"]["input_flow_limit"], mul),
   output_flow_limit = numberstringmultiplicator(orig_accu["energy_source"]["output_flow_limit"], mul)
 }
-advanced_accumulator.picture = advanced_accumulator_picture()
-advanced_accumulator.charge_animation = advanced_accumulator_charge()
-advanced_accumulator.charge_light = {intensity = 0.3, size = 7, color = {r = 0.15, g = 0.27, b = 0.12}}
-advanced_accumulator.discharge_animation = advanced_accumulator_discharge()
-advanced_accumulator.discharge_light = {intensity = 0.7, size = 7, color = {r = 0.15, g = 0.27, b = 0.12}}
+advanced_accumulator.chargable_graphics = {
+	picture = advanced_accumulator_picture(),
+	charge_animation = advanced_electric_accumulator_charge(advanced_accumulator_picture),
+	charge_cooldown = 30,
+	charge_light = {intensity = 0.7, size = 7, color = {r = 0.15, g = 0.27, b = 0.12}},
+	discharge_animation = advanced_electric_accumulator_discharge(advanced_accumulator_picture),
+	discharge_cooldown = 60,
+	discharge_light = {intensity = 0.7, size = 7, color = {r = 0.15, g = 0.27, b = 0.12}},
+}
 advanced_accumulator.fast_replaceable_group = "accumulator"
 if tier == "elite" or tier == "ultimate" then
 	advanced_accumulator.next_upgrade = "elite-accumulator"
