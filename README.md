@@ -1,5 +1,6 @@
-# Advanced Electric High Resolution
-Advanced Electric is a Factorio mod that adds new types of solar panels and accumulators.
+# Advanced Solar HR
+Advanced Solar is a Factorio mod that adds 3 new tiers of solar panels and accumulators.
+Each tiers multiplier can be configured. Default is 10x, 100x and 1000x.
 
 ![Mod ingame image](https://mods-data.factorio.com/assets/425e92aaeefaaa211981bf784fe07ad730d39323.png)
 
