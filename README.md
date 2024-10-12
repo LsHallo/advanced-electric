@@ -1,6 +1,7 @@
 # Advanced Solar HR
-Advanced Solar is a Factorio mod that adds 3 new tiers of solar panels and accumulators.
-Each tiers multiplier can be configured. Default is 10x, 100x and 1000x.
+Advanced Solar is a Factorio mod that adds 3 new tiers of solar panels and accumulators.  
+Each tiers multiplier can be configured. Default is 10x, 100x and 1000x.  
+Fully 2.0 compatible! Crafting recipes adjust if space age DLC is enabled.
 
 ![Mod ingame image](https://mods-data.factorio.com/assets/425e92aaeefaaa211981bf784fe07ad730d39323.png)
 
@@ -19,7 +20,7 @@ The language file consists of 4 parts. Each part defines the name of
 2. the entity
 3. the technology
 4. the description of the technology
-5. Mod settings and their description
+5. the mod settings and their description
 
 The file needs to be called locale.cfg and placed in "**Advanced-Electric-Revamped-v16/locale/[locale-shorthand] (e.g.: en, de, nl, ...)**"
 `e.g: Advanced-Electric-Revamped-v16/locale/it/locale.cfg`.  
@@ -60,6 +61,7 @@ ultimate-solar=Source of free electric energy, but useless at night.
 
 [mod-setting-name]
 advanced-electric-enabled-tiers=Enabled Tiers
+advanced-electric-difficulty=Difficulty
 advanced-electric-multiplier-advanced-solar=Advanced Solar Tier Multiplier
 advanced-electric-multiplier-elite-solar=Elite Solar Tier Multiplier
 advanced-electric-multiplier-ultimate-solar=Ultimate Solar Tier Multiplier
@@ -69,6 +71,7 @@ advanced-electric-multiplier-ultimate-accumulator=Ultimate Accumulator Tier Mult
 
 [mod-setting-description]
 advanced-electric-enabled-tiers=Disable specific tiers.
+advanced-electric-difficulty=Difficulty of higher tiers.\nEasy: Next tier costs 'multiplier'.\nMedium: Next tier cost '1.1 * multiplier'.\nHard: Next tier cost '1.3  * multiplier'.\nMore info on mod page.
 advanced-electric-multiplier-advanced-solar=Multiplier for the production values of the tier. 60kW * [Multiplier]. E.g.: For a 600kW panel use 10.
 advanced-electric-multiplier-elite-solar=Multiplier for the production values of the tier. 60kW * [Multiplier]. E.g.: For a 6MW panel use 100.
 advanced-electric-multiplier-ultimate-solar=Multiplier for the production values of the tier. 60kW * [Multiplier]. E.g.: For a 60MW panel use 1000.
@@ -80,4 +83,7 @@ advanced-electric-multiplier-ultimate-accumulator=Multiplier for the production 
 advanced-electric-enabled-tiers-advanced=Advanced
 advanced-electric-enabled-tiers-elite=Advanced + Elite
 advanced-electric-enabled-tiers-ultimate=Advanced + Elite + Ultimate
+advanced-electric-difficulty-easy=Easy
+advanced-electric-difficulty-medium=Medium
+advanced-electric-difficulty-hard=Hard
 ```
