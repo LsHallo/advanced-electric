@@ -19,6 +19,7 @@ The language file consists of 4 parts. Each part defines the name of
 2. the entity
 3. the technology
 4. the description of the technology
+5. Mod settings and their description
 
 The file needs to be called locale.cfg and placed in "**Advanced-Electric-Revamped-v16/locale/[locale-shorthand] (e.g.: en, de, nl, ...)**"
 `e.g: Advanced-Electric-Revamped-v16/locale/it/locale.cfg`.  
