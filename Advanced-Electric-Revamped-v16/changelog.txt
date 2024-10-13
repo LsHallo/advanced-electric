@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.0
   Changes:
-    - Factorio 2.0 Space Age compatibility
+    - [space-age] Use space age ingredients if enabled
+    - Factorio 2.0 compatibility
     - Updated graphics from base 2.0 graphics
     - Adjustable difficulty options (Easy, Medium, Hard)
     - Updated FR translation
