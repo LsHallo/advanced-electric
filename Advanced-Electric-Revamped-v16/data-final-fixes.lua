@@ -40,3 +40,8 @@ if mods["Krastorio2"] then
 	mul = settings.startup["advanced-electric-multiplier-ultimate-solar"].value
 	data.raw["solar-panel"]["ultimate-solar"].production = numberstringmultiplicator(data.raw["solar-panel"]["solar-panel"]["production"], mul)
 end
+
+if mods["FactorioExtended-Plus-Power"] == nil then
+	data.raw["accumulator"]["accumulator"].next_upgrade = "advanced-accumulator"
+	data.raw["solar-panel"]["solar-panel"].next_upgrade = "advanced-solar"
+end

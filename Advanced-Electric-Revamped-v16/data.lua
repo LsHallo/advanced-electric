@@ -110,10 +110,6 @@ end
 
 data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
-if mods["FactorioExtended-Plus-Power"] == nil then
-	data.raw["accumulator"]["accumulator"].next_upgrade = "advanced-accumulator"
-	data.raw["solar-panel"]["solar-panel"].next_upgrade = "advanced-solar"
-end
 
 if mods["5dim_core"] then
 	require("prototypes.item-group-5dim")
