@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.1
+  Changes:
+    - Fix incompatibility with ElectricTrains
+---------------------------------------------------------------------------------------------------
 Version: 0.7.0
   Changes:
     - [space-age] Use space age ingredients if enabled
