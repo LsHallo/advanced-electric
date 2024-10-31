@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.3
+  Changes:
+    - Fix incompatibility with base 2.0 without space-age expansion
+---------------------------------------------------------------------------------------------------
 Version: 0.7.2
   Changes:
     - [space-age] Require electromagnetic science pack for Ultimate Solar / Accu
