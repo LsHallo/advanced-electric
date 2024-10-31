@@ -19,6 +19,7 @@ data:extend(
     name = "advanced-accumulator",
     energy_required = 30,
     enabled = false,
+    category = "electronics",
     ingredients =
     {
       {type = "item", name = "accumulator", amount = difficulty_cost},

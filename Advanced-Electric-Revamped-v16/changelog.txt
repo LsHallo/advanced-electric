@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.2
+  Changes:
+    - [space-age] Require electromagnetic science pack for Ultimate Solar / Accu
+    - [space-age] Solar panels and accumulators of all tiers now craftable in electromagnetic plant
+---------------------------------------------------------------------------------------------------
 Version: 0.7.1
   Changes:
     - Fix incompatibility with ElectricTrains

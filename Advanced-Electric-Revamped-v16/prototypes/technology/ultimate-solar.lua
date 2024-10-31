@@ -1,8 +1,10 @@
 local mul = settings.startup["advanced-electric-multiplier-ultimate-solar"].value
 
 local electromagnetic_science_pack = nil
+local additional_prerequisites = nil
 if mods["space-age"] then
   electromagnetic_science_pack = {"electromagnetic-science-pack", 1}
+  additional_prerequisites = "electromagnetic-science-pack"
 end
 
 data:extend(
@@ -19,7 +21,7 @@ data:extend(
         recipe = "ultimate-solar"
       }
     },
-    prerequisites = {"elite-solar"},
+    prerequisites = {"elite-solar", additional_prerequisites},
     unit =
     {
       count = 1.5 * mul,

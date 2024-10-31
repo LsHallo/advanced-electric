@@ -19,6 +19,7 @@ data:extend(
     name = "elite-solar",
     energy_required = 45,
     enabled = false,
+    category = "electronics",
     ingredients =
     {
 	  {type = "item", name = "steel-plate", amount = math.floor(10 * difficulty_factor + 0.5)},
