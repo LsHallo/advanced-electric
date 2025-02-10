@@ -14,7 +14,7 @@ data:extend(
         recipe = "advanced-solar"
       }
     },
-    prerequisites = {"solar-energy"},
+    prerequisites = {"solar-energy", "chemical-science-pack"},
     unit =
     {
       count = 50 * mul,

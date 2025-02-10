@@ -14,7 +14,7 @@ data:extend(
         recipe = "elite-accumulator"
       }
     },
-    prerequisites = {"advanced-accumulator"},
+    prerequisites = {"advanced-accumulator", "production-science-pack"},
     unit =
     {
       count = 3 * mul,

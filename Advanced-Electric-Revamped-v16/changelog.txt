@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.4
+  Changes:
+    - Added JSON migration for renaming technologies to plural version as the base game does this
+    - Advanced solar panel/accumulator now both pre-require chemical science pack
+    - Elite solar panel/accumulator now both pre-require productivity science pack
+    - Ultimate solar panel/accumulator now both pre-require utility science pack
+    - Some tabs changed to 2 spaces
+  Fixes:
+    - POSIX new-line at EOF needed or some POST-compliant loaders may crash
+---------------------------------------------------------------------------------------------------
 Version: 0.7.3
   Changes:
     - Fix incompatibility with base 2.0 without space-age expansion
@@ -196,4 +206,3 @@ Version: 0.1.9
   Changes:
     - Initial release
     - Updated solar panel textures
-

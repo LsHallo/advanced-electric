@@ -14,7 +14,7 @@ data:extend(
         recipe = "elite-solar"
       }
     },
-    prerequisites = {"advanced-solar"},
+    prerequisites = {"advanced-solar", "production-science-pack"},
     unit =
     {
       count = 5 * mul,
