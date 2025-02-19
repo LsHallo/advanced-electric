@@ -14,7 +14,7 @@ data:extend(
         recipe = "advanced-accumulator"
       }
     },
-    prerequisites = {"electric-energy-accumulators"},
+    prerequisites = {"electric-energy-accumulators", "chemical-science-pack"},
     unit =
     {
       count = 30 * mul,

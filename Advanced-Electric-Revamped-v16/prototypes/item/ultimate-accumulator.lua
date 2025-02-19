@@ -9,7 +9,7 @@ data:extend(
     order = "e[accumulator]-a[accumulator]-c",
     place_result = "ultimate-accumulator",
     stack_size = 50,
-	  weight = 200000
+    weight = 200000
   }
 }
 )

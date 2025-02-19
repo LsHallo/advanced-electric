@@ -9,7 +9,7 @@ data:extend(
     order = "e[accumulator]-a[accumulator]-b",
     place_result = "elite-accumulator",
     stack_size = 50,
-	  weight = 66000
+    weight = 66000
   }
 }
 )
