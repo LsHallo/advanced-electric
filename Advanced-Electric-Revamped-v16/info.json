@@ -3,7 +3,7 @@
   "version": "0.7.4",
   "title": "Advanced Solar High Resolution",
   "contact": "",
-  "author": "roland77, LsHallo",
+  "author": "LsHallo, roland77",
   "homepage": "https://forums.factorio.com/viewtopic.php?f=190&t=59398",
   "description": "Adds higher tiers of solar panels(600kW, 6MW, 60MW) and accumulators(50MJ, 500MJ, 5GJ). Values configurable.",
   "dependencies": [
