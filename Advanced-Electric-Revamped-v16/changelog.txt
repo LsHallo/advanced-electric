@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.5
+  Changes:
+    - Also disable item when tier is disabled
+---------------------------------------------------------------------------------------------------
 Version: 0.7.4
   Changes:
     - Added JSON migration for renaming technologies to plural version as the base game does this
