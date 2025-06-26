@@ -45,3 +45,12 @@ if mods["FactorioExtended-Plus-Power"] == nil then
 	data.raw["accumulator"]["accumulator"].next_upgrade = "advanced-accumulator"
 	data.raw["solar-panel"]["solar-panel"].next_upgrade = "advanced-solar"
 end
+
+if mods["space-exploration"] then
+	local orig_accu = data.raw["accumulator"]["accumulator"]
+
+	-- space exploration changes the collision box from 0.9 to 0.8 in data.lua
+	data.raw["accumulator"]["advanced-accumulator"].collision_box = orig_accu.collision_box
+	data.raw["accumulator"]["elite-accumulator"].collision_box = orig_accu.collision_box
+	data.raw["accumulator"]["ultimate-accumulator"].collision_box = orig_accu.collision_box
+end
