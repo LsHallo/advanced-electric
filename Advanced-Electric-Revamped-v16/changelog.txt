@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.6
+  Changes:
+    - Space Exploration 2.0 compatibility (https://github.com/LsHallo/advanced-electric/pull/12)
+---------------------------------------------------------------------------------------------------
 Version: 0.7.5
   Changes:
     - Also disable item when tier is disabled
