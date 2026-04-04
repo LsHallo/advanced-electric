@@ -1,10 +1,12 @@
 local mul = settings.startup["advanced-electric-multiplier-ultimate-accumulator"].value
 
 local electromagnetic_science_pack = nil
-local additional_prerequisites = nil
+local prerequisite_electro = nil
+local prerequisite_metal = nil
 if mods["space-age"] then
   electromagnetic_science_pack = {"electromagnetic-science-pack", 1}
-  additional_prerequisites = "electromagnetic-science-pack"
+  prerequisite_electro = "electromagnetic-science-pack"
+  prerequisite_metal = "tungsten-steel"
 end
 
 data:extend(
@@ -21,7 +23,7 @@ data:extend(
         recipe = "ultimate-accumulator"
       }
     },
-    prerequisites = {"elite-accumulator", "utility-science-pack", additional_prerequisites},
+    prerequisites = {"elite-accumulator", "utility-science-pack", prerequisite_electro, prerequisite_metal},
     unit =
     {
       count = 1.5 * mul,

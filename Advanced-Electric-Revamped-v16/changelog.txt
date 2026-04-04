@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.7
+  Changes:
+    - Require Tungsten Plate research for ultimate tier. Fixes #13
+---------------------------------------------------------------------------------------------------
 Version: 0.7.6
   Changes:
     - Space Exploration 2.0 compatibility (https://github.com/LsHallo/advanced-electric/pull/12)
