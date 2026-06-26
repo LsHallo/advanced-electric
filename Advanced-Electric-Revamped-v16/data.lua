@@ -4,6 +4,13 @@ function numberstringmultiplicator(string, mul)
 	return (tonumber(string:match("%d+")) * mul) .. string:match("[kmgtwjKMGTWJ]+")
 end
 
+function merge_lists(t1, t2)
+    for _, value in ipairs(t2) do
+        table.insert(t1, value)
+    end
+    return t1
+end
+
 function multiplytier(mul)
 	difficulty = settings.startup["advanced-electric-difficulty"]
 	if difficulty == "easy" then

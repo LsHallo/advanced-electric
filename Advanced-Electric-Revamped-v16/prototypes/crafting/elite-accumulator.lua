@@ -12,9 +12,9 @@ if difficulty == "hard" then
 	difficulty_factor = 1.2
 end
 
-local category = nil
+local categories = {"advanced-crafting"}
 if mods["space-age"] then
-  category = "electronics"
+  categories = {"advanced-crafting", "electromagnetics"}
 end
 
 data:extend(
@@ -24,12 +24,12 @@ data:extend(
     name = "elite-accumulator",
     energy_required = 45,
     enabled = false,
-    category = category,
+    categories = categories,
     ingredients =
     {
-	  {type = "item", name = "advanced-accumulator", amount = difficulty_cost},
-	  {type = "item", name = "iron-plate", amount = math.floor(25 * difficulty_factor + 0.5)},
-	  {type = "item", name = "advanced-circuit", amount = math.floor(10 * difficulty_factor + 0.5)}
+      {type = "item", name = "advanced-accumulator", amount = difficulty_cost},
+      {type = "item", name = "iron-plate", amount = math.floor(25 * difficulty_factor + 0.5)},
+      {type = "item", name = "advanced-circuit", amount = math.floor(10 * difficulty_factor + 0.5)}
     },
     results = {{type="item", name="elite-accumulator", amount=1}}
   }

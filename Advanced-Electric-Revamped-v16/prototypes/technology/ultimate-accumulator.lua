@@ -4,7 +4,7 @@ local electromagnetic_science_pack = nil
 local additional_prerequisites = nil
 if mods["space-age"] then
   electromagnetic_science_pack = {"electromagnetic-science-pack", 1}
-  additional_prerequisites = "electromagnetic-science-pack"
+  additional_prerequisites = {"electromagnetic-science-pack", "tungsten-steel", "electromagnetic-plant"}
 end
 
 data:extend(
@@ -21,7 +21,7 @@ data:extend(
         recipe = "ultimate-accumulator"
       }
     },
-    prerequisites = {"elite-accumulator", "utility-science-pack", additional_prerequisites},
+    prerequisites = merge_lists({"elite-accumulator", "utility-science-pack"}, additional_prerequisites),
     unit =
     {
       count = 1.5 * mul,

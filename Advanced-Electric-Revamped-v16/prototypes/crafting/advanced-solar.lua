@@ -12,9 +12,9 @@ if difficulty == "hard" then
 	difficulty_factor = 1.2
 end
 
-local category = nil
+local categories = {"crafting"}
 if mods["space-age"] then
-  category = "electronics"
+  categories = {"crafting", "electromagnetics"}
 end
 
 data:extend(
@@ -24,12 +24,12 @@ data:extend(
     name = "advanced-solar",
     energy_required = 30,
     enabled = false,
-    category = category,
+    categories = categories,
     ingredients =
     {
-	  {type = "item", name = "steel-plate", amount = math.floor(5 * difficulty_factor + 0.5)},
-	  {type = "item", name = "electronic-circuit", amount = math.floor(5 * difficulty_factor + 0.5)},
-	  {type = "item", name = "solar-panel", amount = difficulty_cost}
+      {type = "item", name = "steel-plate", amount = math.floor(5 * difficulty_factor + 0.5)},
+      {type = "item", name = "electronic-circuit", amount = math.floor(5 * difficulty_factor + 0.5)},
+      {type = "item", name = "solar-panel", amount = difficulty_cost}
     },
     results = {{type="item", name="advanced-solar", amount=1}}
   }
