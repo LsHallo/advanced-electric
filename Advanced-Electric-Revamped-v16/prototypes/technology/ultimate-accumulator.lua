@@ -1,7 +1,7 @@
 local mul = settings.startup["advanced-electric-multiplier-ultimate-accumulator"].value
 
 local electromagnetic_science_pack = nil
-local additional_prerequisites = nil
+local additional_prerequisites = {}
 if mods["space-age"] then
   electromagnetic_science_pack = {"electromagnetic-science-pack", 1}
   additional_prerequisites = {"electromagnetic-science-pack", "tungsten-steel", "electromagnetic-plant"}
